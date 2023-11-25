@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+</head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mango's World</title>
@@ -117,8 +118,15 @@
       color: #ff5a5f;
     }
   </style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
 </head>
 <body>
+  <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</div>
+  <body>
   <div class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</div>
   <header>
     <h1>Welcome to Mango's World!</h1>
@@ -155,3 +163,25 @@
   </script>
 </body>
 </html>
+
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+
+      // Optionally, you can store the user's preference in local storage
+      const isDarkMode = body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDarkMode);
+    }
+
+    // Check if dark mode preference exists in local storage on page load
+    const isDarkMode = localStorage.getItem('darkMode');
+    const body = document.body;
+    if (isDarkMode === 'true') {
+      body.classList.add('dark-mode');
+    }
+  </script>
+</body>
+</html>
+
