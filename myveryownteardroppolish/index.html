@@ -5,7 +5,7 @@
     <meta name="theme-color" content="#000000">
     <title>myTeardrop</title>
     <meta content="myTeardrop" property="og:title" />
-    <meta content="Take care of your very own Teardrop!" property="og:description" />
+    <meta content="Zadbaj o swój własny Teardrop!" property="og:description" />
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <meta content="#4291ff" property="theme-color" />
     <link rel="manifest" href="manifest.json" />
@@ -29,7 +29,7 @@
         <div id="belowScreen"></div>
         <img id="logo" src="./images/Logo.png">
         <div style="padding:10%;padding-top: 30px;padding-bottom: 30px;">
-            <p style="font-size: 24px;">Take care of your awesome little Teardrop. You could also just feed her lemons for her entire life! All that matters is that you're now Teardrop's best friend.</p>
+            <p style="font-size: 24px;">Dbaj o swoją wspaniałą małą Teardrop. Możesz też po prostu karmić ją cytrynami przez całe jej życie! Liczy się tylko to, że jesteś teraz najlepszym przyjacielem Teardrop.</p>
         </div>
 
         <div style="width: 100%;display: -webkit-box;
@@ -121,7 +121,7 @@
         fullButton.onclick = function (e) {
             if ((/iPad/i.test(navigator.userAgent) || "ontouchstart" in document.documentElement) && localStorage.alerted != 'yes') {
                 localStorage.alerted = 'yes';
-                alert(`Looks like you're likely playing on an iPad. Safari in iPadOS has an annoying issue where if you tap the bottom half of the screen couple times when you're playing the game it gives you a constant warning message about keyboards. It is recommended to add the game to the home screen instead for a good fullscreen experience`)
+                alert(`Wygląda na to, że prawdopodobnie grasz na iPadzie. Safari w iPadOS ma irytujący problem, w którym jeśli dotkniesz dolnej połowy ekranu kilka razy podczas grania w grę, pojawi się ciągły komunikat ostrzegawczy o klawiaturach. Zamiast tego zaleca się dodanie gry do ekranu głównego, aby uzyskać dobre wrażenia na pełnym ekranie`)
             };
             let element = playFrame;
             if (element.webkitEnterFullScreen) {

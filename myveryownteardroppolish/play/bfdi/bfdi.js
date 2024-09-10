@@ -2748,7 +2748,7 @@
                                     ! function(e = function() {}) {
                                         let t = new PIXI.Sprite(G["Sprites/Rooms"][15]);
                                         t.tint = 0, t.x = l.screen.width / 2, t.y = l.screen.height / 2, t.anchor.set(.5, .5), l.stage.addChild(t), t.interactive = !0;
-                                        let a = new PIXI.BitmapText("Open the Wheel of Fun by holding down the happiness button.", {
+                                        let a = new PIXI.BitmapText("Naciśnij i przytrzymaj przycisk szczęścia, aby uruchomić koło rogatości.", {
                                             fontSize: 24,
                                             fontName: "MenuShag",
                                             breakWords: !0,
@@ -3153,9 +3153,9 @@
                 if ("regularcake" != e && t.introMode) continue;
                 X++;
                 let a = new ae((function() {
-                        if (o.requiredLevel > t.level) Ie.message("You need atleast level " + o.requiredLevel + " to buy this item!", G["Sprites/GameUI"][35]);
+                        if (o.requiredLevel > t.level) Ie.message("Do zakupu tego przedmiotu wymagany jest co najmniej" + o.requiredLevel + " poziom!", G["Sprites/GameUI"][35]);
                         else {
-                            if (v.text = "", t.introMode && (v.alpha = v.targetAlpha, v.targetAlpha = 1, v.y = l.screen.height / 2 + 100, v.text = "Go to the fridge using the button below, drag a food item to the plate!"), o.cost > p) return t.sfx && (R.fail.stop(), R.fail.play()), g < .01 && (f = 0), g = 2, void(v.text = n.ui.notEnoughCoins);
+                            if (v.text = "", t.introMode && (v.alpha = v.targetAlpha, v.targetAlpha = 1, v.y = l.screen.height / 2 + 100, v.text = "Przejdź do lodówki za pomocą przycisku poniżej i przeciągnij produkt spożywczy na talerz!"), o.cost > p) return t.sfx && (R.fail.stop(), R.fail.play()), g < .01 && (f = 0), g = 2, void(v.text = n.ui.notEnoughCoins);
                             for (let i = 0; i < z.length; i++)
                                 if (!z[i].full) {
                                     let n = new PIXI.Sprite(G["Sprites/Food"][o.texture]);
@@ -4388,7 +4388,7 @@
                     let e = new ae((function() {
                         if (-1 == a.cost) return void Ie.message(n.message.obtainCostume(u[a.achievement].name), G["Sprites/GameUI"][u[a.achievement].icon]);
                         let i = a.cost;
-                        if (o && (i = a.cost * a.discount.price), i > h) return g < .01 && (f = 0), g = 2, I.text = "Not enough coins!", I.alpha = 2, void(t.sfx && (R.fail.stop(), R.fail.play()));
+                        if (o && (i = a.cost * a.discount.price), i > h) return g < .01 && (f = 0), g = 2, I.text = "Za mało monet!", I.alpha = 2, void(t.sfx && (R.fail.stop(), R.fail.play()));
                         o && M.destroyDiscount();
                         let r = Math.floor(Math.max(600, i) / 6);
                         w.happiness += 40 - i / 100, w.progress += 50;
